@@ -1,0 +1,164 @@
+
+/*
+
+Main stylesheets
+*/
+
+.masthead {
+    padding: 20px;
+}
+
+
+th {
+    font-weight: normal!important;
+}
+
+.iamcontainer {
+    padding: 20px;
+}
+
+.tableContainerfirst,
+.tableContainersecond {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+.tableContainerfirst {
+    width:70%;
+}
+.tableContainersecond {
+    width:90%;
+}
+
+.basicTable {
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+.myFace {
+    float:left;
+}
+
+.myFaceimg {
+    width:200px;
+    display: block;
+    margin: 0 auto;
+}
+.myType {
+    margin-top:5%;
+}
+
+.tableContainersecond table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+
+h3 {
+    display: inline;
+}
+.myimage {
+    position: fixed;
+    top:20px;
+    right:30px;
+    max-width: 30px;
+    max-height: 30px;
+    border: 2px solid white;
+    z-index:99;
+    border-radius:4px;
+}
+
+.mastheadtop {
+    margin-bottom: 10px;
+}
+.parentContainer, .defaultparentContainer {
+    min-width: 500px;
+    width:auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+.defaultparentContainer {
+    margin-bottom:50px;
+}
+
+.parentContainer {
+    padding-bottom: 50px;
+}
+
+td>p {
+    text-indent:1.5em;
+}
+
+.timerContainer {
+    width:auto;
+    min-width: 50px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    text-align: center;
+}
+
+.timerMinutes, .timerSeconds {
+    float: left ;
+    width:25%;
+    margin-top:30px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+}
+
+.timerMinutes {
+    margin-left:25%;
+
+    margin-right:5px;
+}
+.timerSeconds {
+
+    margin-left:5px;
+}
+
+.myMap {
+    visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+    .myimage {
+        max-width: 55px;
+        max-height: 55px;
+    }
+    .defaultparentContainer {
+        margin-bottom:20px;
+    }
+
+    .myMap {
+        height: 700px;
+    }
+
+    .iamcontainer,
+    .tableContainerfirst,
+    .tableContainersecond,
+    .timerContainer,
+    li,
+    a
+    {
+        font-size: 2em;
+    }
+
+    h4,
+    td a{
+        font-size: 1.2em;
+    }
+
+
+    h3 .header {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 991px) {
+    .myFaceimg {
+        width: 400px;
+    }
+}
