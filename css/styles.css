@@ -103,7 +103,7 @@ h3 {
     margin-bottom: 10px;
 }
 .parentContainer, .defaultparentContainer {
-    min-width: 500px;
+
     width:auto;
     max-width: 1200px;
     margin-left: auto;
@@ -111,12 +111,10 @@ h3 {
     display:block;
 }
 
-@media (max-width: 1240px) {
-    .parentContainer, .defaultparentContainer {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 
+.bagContainer {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 body {
@@ -128,7 +126,7 @@ a {
 }
 
 .defaultparentContainer {
-    margin-bottom:30px;
+    margin-bottom:20px;
 
 }
 
@@ -163,30 +161,25 @@ td>p {
 
 .myMap {
     visibility: hidden;
+    height: 70vh;
 }
 
-@media (max-width: 1200px) {
-    .myimage {
-        max-width: 55px;
-        max-height: 55px;
-    }
+/*@media (max-width: 1200px) {
     .defaultparentContainer {
         margin-bottom:20px;
     }
-    .myMap {
-        height: 700px;
-    }
-}
+}*/
 
 /**/
 .under {
+
     background-color: rgba(200, 200, 200, 0.9);
     width: 430px;
     height:430px;
 
     position: relative;
-    margin-top:-395px;
-    border-radius: 10px;
+    margin-top:-400px;
+    border-radius: 50%;
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
@@ -213,6 +206,22 @@ td>p {
     z-index:10;
 }
 
+@media (max-width: 510px) {
+    .under {
+        width: 215px;
+        height:215px;
+        margin-top:-203px;
+    }
+
+    .clock {
+        width: 180px;
+        height: 180px;
+    }
+
+}
+
+
+
 .clock.simple:after {
     background: #000;
     border-radius: 50%;
@@ -225,13 +234,28 @@ td>p {
     height: 5%;
     z-index: 10;
 }
-.minutes-container, .hours-container, .seconds-container {
+.minutes-container, .hours-container, .seconds-container, .lightCircleContainer{
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 }
+
+.lightCircleContainer {
+    left: 30%;
+    width: 40%;
+    height:40%;
+    top:5%;
+    background-color: #c4e3f3;
+    border-radius: 50%;
+}
+
+.minutes-container {
+
+    transform-origin: 50% 25%;
+}
+
 .hours {
     background: #000;
     height: 20%;
@@ -243,14 +267,15 @@ td>p {
 }
 .minutes {
     background: #000;
-    height: 40%;
+    height: 20%;
     left: 49%;
     position: absolute;
-    top: 10%;
-    transform-origin: 50% 100%;
-    width: 2%;
+    top: 5%;
+    width: 1.3%;
+    border-radius:5px;
 }
 .seconds {
+    border-radius:5px;
     background: #000;
     height: 45%;
     left: 49.5%;

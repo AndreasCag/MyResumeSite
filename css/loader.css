@@ -4,7 +4,9 @@ preloader
 
 */
 
-
+html {
+    overflow-y: scroll;
+}
 
 
 .circle {
@@ -49,6 +51,36 @@ preloader
         opacity: 0;
     }
 }
+@-o-keyframes holyCircle {
+    0%   {width:0%;
+        height:0%;
+    }
+    50% {width:250%;
+        margin-top: -50%;
+        margin-left:-100%;
+        opacity: 0.2;
+        height:250%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-khtml-keyframes holyCircle {
+    0%   {width:0%;
+        height:0%;
+    }
+    50% {width:250%;
+        margin-top: -50%;
+        margin-left:-100%;
+        opacity: 0.2;
+        height:250%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 @-moz-keyframes holyCircle {
     0%   {width:0%;
